@@ -2,7 +2,7 @@ import "./App.css";
 import React from "react";
 
 
-import Inpput from "./components/formulario/Inpput";
+import Input from "./components/formulario/Input";
 import InderetaPai from "./components/comunicacao/InderetaPai";
 import DiretaPai from "./components/comunicacao/DiretaPai";
 import UsuarioInfo from "./components/condicional/UsuarioInfo";
@@ -24,12 +24,18 @@ export default (props) => {
 
       <div className="Cards">
 
-      <Card titulo="#09 - Comnicação Indireta" color="#8BAD39">
+      <Card titulo="#11 - Componente Controlado" color="#E45F56">
+        
+      <Input></Input>
+       </Card>
+       
+
+      <Card titulo="#10 - Comnicação Indireta" color="#8BAD39">
         
       <InderetaPai></InderetaPai>
        </Card>
 
-      <Card titulo="#10 - Comnicação Direta" color="#59323C">
+      <Card titulo="#09 - Comnicação Direta" color="#59323C">
         
         <DiretaPai></DiretaPai>
 
