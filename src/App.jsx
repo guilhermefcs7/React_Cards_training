@@ -1,6 +1,8 @@
 import "./App.css";
 import React from "react";
 
+
+import Inpput from "./components/formulario/Inpput";
 import InderetaPai from "./components/comunicacao/InderetaPai";
 import DiretaPai from "./components/comunicacao/DiretaPai";
 import UsuarioInfo from "./components/condicional/UsuarioInfo";

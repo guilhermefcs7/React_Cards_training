@@ -1,19 +1,19 @@
-import React from "react";
+import React, {useState} from "react";
 import IndiretaFilho from "./IndiretaFilho";
 
 
 export default (props) => {
 
-    let nome = "?"
-    let idade = 0
-    let nerd = false
+    
+    const [nome, setNome]  = useState("?") // usando o operador destructing e atribuindo o seu valor no state
+    const [idade, setIdade]  = useState(0)
+    const [nerd, setNerd]  = useState(false)
+    
 
-    function fornecerInformacoes(nomeParam, idadeParam, nerdParam){
-        nome = nomeParam
-        idade = idadeParam
-        nerd = nerdParam
-
-        console.log(nomeParam, idadeParam, nerdParam)
+    function fornecerInformacoes(nome, idade, nerd){
+       setNome(nome)
+       setIdade(idade)
+       setNerd(nerd)
     }
     //nome idade nerd
     return(
